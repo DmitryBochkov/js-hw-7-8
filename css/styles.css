@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.wrapper {
+  width: 900px;
+  margin: 20px auto;
+}
+/*TABS*/
+.tab-list {
+  list-style: none;
+}
+.tab-list li {
+  background: #eee;
+  float: left;
+  height: 40px;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+}
+.tab-list a {
+  position: absolute;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 40px;
+  color: #777;
+  text-decoration: none;
+}
+.tab-list li:hover {
+  background: #dfe7e7;
+}
+.tab-list .active {
+  background: #fff;
+  z-index: 10;
+}
+.tab-list .active:hover {
+  background: #fff;
+}
+.tab-list .active a:hover {
+  cursor: text;
+}
+.tab-content {
+  border: 1px solid #ccc;
+  z-index: 1;
+  position: relative;
+  top: -1px;
+  height: 160px;
+  overflow: auto;
+}
+.tab-content > div {
+  display: none;
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+.tab-content .active {
+  display: inherit;
+}
+
+/*FORM WITH TOOLTIPS*/
+form {
+  margin-top: 20px;
+  width: 60%;
+}
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+fieldset > div {
+  position: relative;
+}
+label {
+  display: inline-block;
+  width: 18%;
+  padding: 15px 10px;
+}
+input {
+  width: 35%;
+}
+.tooltip {
+  position: absolute;
+  padding: 5px;
+  top: 8px;
+  left: 60%;
+  width: 190px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  display: none;
+
+}
